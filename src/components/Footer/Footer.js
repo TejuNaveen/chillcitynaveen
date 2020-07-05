@@ -27,7 +27,7 @@ const Footer = props => {
       <div className="footer-menu">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="/">Home test</a>
           </li>
           <li>
             <a href="/">Products</a>
