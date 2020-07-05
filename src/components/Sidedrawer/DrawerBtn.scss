@@ -1,0 +1,28 @@
+.toggle-btn {
+  height: 24px;
+  width: 30px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &:focus {
+    outline: none;
+  }
+
+  .toggle-bar {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+  }
+}
+
+@media (min-width: 768px){
+  .toggle-btn {
+    display: none;
+  }
+}

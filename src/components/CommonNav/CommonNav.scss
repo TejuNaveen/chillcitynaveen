@@ -1,0 +1,79 @@
+ul.nav-menu {
+    display: flex;
+    overflow: hidden;
+    li{
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0 auto;
+        height: 50px;
+        line-height: 50px;
+
+        .menu-links {
+        position:relative; 
+        -webkit-transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+        -o-transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 
+        transition:all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        position: relative;
+        display: inline-block;
+        padding: 0 30px;
+        color: #fff;
+        font-size: 14px;
+        letter-spacing: -.5px;
+        text-decoration: none;
+
+        &:after {
+            content:attr( data-menu-name ); 
+            display:block; 
+            width:100%; 
+            height:100%; 
+            position:absolute; 
+            left:0; 
+            top:0; 
+            text-align:center;
+            -webkit-transform:translateY( -100% );
+            -ms-transform:translateY( -100% );
+            -o-transform:translateY( -100% );
+            transform:translateY( -100% );
+          }
+          &:hover {
+            -webkit-transform:translateY( 100% );
+            -ms-transform:translateY( 100% );
+            -o-transform:translateY( 100% );
+            transform:translateY( 100% );
+            color: #ffe800;
+          }
+      }
+
+    }  
+       
+}
+
+@media (max-width: 767px) {
+    ul.nav-menu {
+        padding: 0;
+        flex-direction: column;
+        display: flex;
+        height: 100%;
+        text-align: left;
+        li{
+            margin: 0;
+            text-align: center;
+            &:hover {
+                background-color: #439baf;
+            }
+            .menu-links {
+                padding: 0;
+                width: 100%;
+                &::after {
+                    content: '';
+                    transform: none;
+                }
+                &:hover, &:focus, &:active {
+                    transform: none;
+                    color: #ffe800; 
+                    transition: none;
+                }
+            }
+        }
+    }
+}

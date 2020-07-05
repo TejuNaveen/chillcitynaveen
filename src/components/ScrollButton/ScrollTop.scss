@@ -1,0 +1,42 @@
+.scroll-to-top {
+position: fixed;
+bottom: 0.5rem;
+right: 0.5rem;
+animation: fadeIn 700ms ease-in-out 1s both;
+cursor: pointer;
+width: 40px;
+height: 40px;
+
+.scroll-btn {
+    display: inline-block;
+    background-color: #FF9800;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 4px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-image: url(../../images/scroll-top.png);
+    &:hover {
+        cursor: pointer;
+        background-color: #ffe800;
+    }
+    &:active {
+        background-color: #ffe800;
+    }
+  }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
