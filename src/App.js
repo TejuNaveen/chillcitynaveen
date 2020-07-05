@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Header from "./components/Header/Header";
-import MainComponent from "./components/Main/MainComponent";
 import SideDrawer from "./components/Sidedrawer/SideDrawer";
 import BackDrop from "./components/BackDrop/BackDrop";
 // import BgIntroVideo from "./components/BackgroundVideo/BgIntroVideo";
