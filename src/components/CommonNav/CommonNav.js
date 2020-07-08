@@ -11,7 +11,7 @@ class CommonMenu extends Component{
           <Link to="/" data-menu-name="HOME" className="menu-links">Home</Link>
         </li>
         <li>
-          <Link to="/product" data-menu-name="PRODUCTS" className="menu-links">Products</Link>
+          <Link to="/skills" data-menu-name="SKILLS" className="menu-links">Skills</Link>
         </li>
         <li>
           <Link to="/contact" data-menu-name="CONTACT" className="menu-links">Contact</Link>
