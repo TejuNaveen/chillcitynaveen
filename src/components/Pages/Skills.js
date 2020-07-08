@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 
-class Product extends Component{
+class Skills extends Component{
     constructor(){
         super()
     }
 
     render(){
         return (
-            <div>
-                <p>Product</p>
-            </div>
+            <>
+                <p>Skills</p>
+            </>
         )
     }
 }
 
-export default Product;
+export default Skills;

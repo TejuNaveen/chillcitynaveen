@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   z-index: 50;
-  transition: .6s all ease;
+  transition: .6s all ease-in-out;
   .header-navigation {
     padding: 0 0.5rem;
     display: flex;
@@ -17,6 +17,7 @@
       color: #fff;
       padding: 0 .5rem;
       vertical-align: middle;
+      transition: .6s all ease-in-out;
       .logo {
         width: 40px;
         height: 40px;
@@ -80,7 +81,10 @@
 .sticky {
   .main-header {
     height: 54px;
-    background: #1F6D7F;
+    background: #202027;
     opacity: 1;
+    .main-logo {
+      font-size: 1.2rem;
+    }
   }
 }
