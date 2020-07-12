@@ -1,20 +1,41 @@
-.banner-image {
-    width: 100%;
-    background-image: url(../../images/livechat-banner.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: top left;
-    height: 80vh;
-    background-attachment: fixed;
-    position: relative;
+// .banner-image {
+//     width: 100%;
+//     background-image: url(../../images/contact-us-banner.jpg);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     background-position: top left;
+//     height: 40vh;
+//     background-attachment: fixed;
+//     position: relative;
 
-    &:before {
-        content: 'Contact Us';
+//     &:before {
+//         content: 'Contact Us';
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         font-size: 2.5rem;
+//     }
+// }
+section.banner-section {
+    position: relative;
+    .content {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 2.5rem;
+        color: #fff;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        opacity: .5;
+        p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+        }
     }
 }
 section.contact-us {
@@ -184,27 +205,31 @@ section.contact-us {
 
 
 @media (max-width:767px){
-    .banner-image {
-        background-size: cover;
-        background-position: center;
-        &:before{
-            font-size: 2rem;
-        }
+    section.banner-section .content p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2rem;
     }
     section.contact-us {
         .contact-container {
             min-height: 100%;
-            margin: 2rem;
+            margin: 1.5rem;
             flex-direction: column;
             .contact-details{
                 position: relative;
                 top: 0;
                 width: 100%;
                 height: auto;
+                padding: 1.5rem;
+                .details li span {
+                    font-size: .8rem;
+                }
             }
             .form-container {
                 position: relative;
-                padding: 2rem;
+                padding: 1.5rem;
                 background: #fff;
                 margin-left: 0;
                 width: 100%;

@@ -7,9 +7,9 @@ class Skills extends Component{
 
     render(){
         return (
-            <>
-                <p>Skills</p>
-            </>
+            <React.Fragment>
+                
+            </React.Fragment>
         )
     }
 }

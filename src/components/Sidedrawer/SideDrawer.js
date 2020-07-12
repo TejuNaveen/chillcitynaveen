@@ -15,7 +15,7 @@ const SideDrawer = props => {
         <span>Chill City Naveen</span>
       </a>
       <button className="close" onClick={props.close} />
-      <CommonMenu />
+      <CommonMenu click={props.close} />
     </nav>
   );
 };

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { FaFacebook, FaYoutube, FaInstagram, FaTwitter , FaAddressCard, FaMailBulk, FaMobileAlt} from 'react-icons/fa';
-import './Pages.scss'
-import contactImg from '../../images/contact-us-banner.jpg'
+import './ContactUs.scss'
+import desktopBanner from '../../images/contactus.jpg'
+import mobBanner from '../../images/mob-bg.jpg'
 
 class Contact extends Component{
     constructor(){
@@ -52,8 +53,13 @@ class Contact extends Component{
         const {errors} =  this.state;
         return (
             <React.Fragment>
-                <div className="banner-image"></div>
-                {/* <img src={contactImg} className="banner-image"/> */}
+                <section className="banner-section">
+                    <img src={desktopBanner} class="desktop-banner banner"/>
+                    <img src={mobBanner} class='mob-banner banner'/>
+                    <div className="content">
+                        <p>Contact Us</p>
+                    </div>
+                </section>
                 <section className="contact-us">
                     <div className="contact-container">
                         <div className="contact-details">
