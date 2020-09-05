@@ -46,3 +46,18 @@
     }
   }
 }
+
+.image-1 {
+  position: relative;
+  &:before {
+    content: 'he hello viewers';
+    position: absolute;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}
